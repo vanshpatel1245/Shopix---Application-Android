@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Admin Brand -->
+    <color name="admin_primary">#0F6EFD</color>
+    <color name="admin_primary_dark">#0A58CA</color>
+    <color name="admin_accent">#00D4AA</color>
+
+    <!-- Dark Theme -->
+    <color name="admin_bg">#0D1117</color>
+    <color name="admin_surface">#161B22</color>
+    <color name="admin_card">#1C2333</color>
+    <color name="admin_card_border">#30363D</color>
+
+    <!-- Text -->
+    <color name="admin_text_primary">#F0F6FC</color>
+    <color name="admin_text_secondary">#8B949E</color>
+    <color name="admin_text_muted">#484F58</color>
+
+    <!-- Status Colors -->
+    <color name="admin_success">#22C55E</color>
+    <color name="admin_warning">#F59E0B</color>
+    <color name="admin_error">#FF4144</color>
+    <color name="admin_info">#38BDF8</color>
+
+    <!-- White -->
+    <color name="admin_white">#FFFFFF</color>
+
+    <!-- Shopix Design System Colors -->
+    <color name="shopix_gray_500">#6B7280</color>
+</resources>

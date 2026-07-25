@@ -1,0 +1,16 @@
+<resources>
+    <style name="Base.Theme.ShopixSeller" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/shopix_primary</item>
+        <item name="colorSecondary">@color/shopix_primary</item>
+
+        <!-- Standard colors -->
+        <item name="android:statusBarColor">@color/shopix_primary</item>
+        <item name="android:navigationBarColor">@android:color/white</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowBackground">@color/shopix_bg_default</item>
+
+        <!-- Ensuring content doesn't overlap system bars by default -->
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+    <style name="Theme.ShopixSeller" parent="Base.Theme.ShopixSeller" />
+</resources>

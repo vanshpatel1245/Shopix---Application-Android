@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "830729064062",
+    "project_id": "shopix-73393",
+    "storage_bucket": "shopix-73393.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:830729064062:android:6e1199a4349483ae43922f",
+        "android_client_info": {
+          "package_name": "com.example.shopix_admin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAl7yS3XSQsg7CJxCnGBeIXel8tX3fL3Us"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:830729064062:android:c2e93add9f17590943922f",
+        "android_client_info": {
+          "package_name": "com.shopix.buyer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAl7yS3XSQsg7CJxCnGBeIXel8tX3fL3Us"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:830729064062:android:fecfb203d04b9f9443922f",
+        "android_client_info": {
+          "package_name": "com.shopix.seller"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAl7yS3XSQsg7CJxCnGBeIXel8tX3fL3Us"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

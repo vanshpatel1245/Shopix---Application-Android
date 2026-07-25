@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
+    <application
+        android:name=".ShopixApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Shopix Seller"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ShopixSeller">
+        <activity
+            android:name=".SellerEditProfileActivity"
+            android:exported="false" />
+        <!-- Splash Screen -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Landing -->
+        <activity
+            android:name=".SellerLandingActivity"
+            android:exported="false" /> <!-- Auth -->
+        <activity
+            android:name=".SellerLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SellerRegisterActivity"
+            android:exported="false" /> <!-- Main Screens -->
+        <activity
+            android:name=".SellerDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SellerOrdersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SellerProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SellerEditProfileActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Shopix Admin"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ShopixAdmin">
+
+        <!-- Splash -->
+        <activity android:name=".MainActivity" android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Auth -->
+        <activity android:name=".AdminLoginActivity"     android:exported="false" />
+
+        <!-- Main -->
+        <activity android:name=".AdminDashboardActivity" android:exported="false" />
+        <activity android:name=".AdminUsersActivity"     android:exported="false" />
+        <activity android:name=".AdminSellersActivity"   android:exported="false" />
+        <activity android:name=".AdminProductsActivity"  android:exported="false" />
+        <activity android:name=".AdminOrdersActivity"    android:exported="false" />
+
+    </application>
+
+</manifest>

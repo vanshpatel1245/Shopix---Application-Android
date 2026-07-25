@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    app:cardCornerRadius="14dp"
+    app:cardElevation="0dp"
+    app:cardBackgroundColor="@color/admin_card">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Order ID + Status -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical">
+
+            <LinearLayout android:layout_width="0dp" android:layout_weight="1"
+                android:layout_height="wrap_content" android:orientation="vertical">
+                <TextView android:id="@+id/txtOrderId"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Order #XXXXX"
+                    android:textColor="@color/admin_text_primary"
+                    android:textSize="15sp" android:textStyle="bold" />
+                <TextView android:id="@+id/txtPlacedAt"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="00 Oct 2025"
+                    android:textColor="@color/admin_text_muted" android:textSize="11sp"
+                    android:layout_marginTop="2dp" />
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:orientation="vertical" android:gravity="end">
+                <TextView android:id="@+id/txtStatus"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="⏳ Pending"
+                    android:textColor="@color/admin_warning"
+                    android:textSize="12sp" android:textStyle="bold" />
+                <TextView android:id="@+id/txtAmount"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="₹0.00"
+                    android:textColor="@color/admin_success"
+                    android:textSize="16sp" android:textStyle="bold"
+                    android:layout_marginTop="2dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="@color/admin_card_border"
+            android:layout_marginTop="12dp" android:layout_marginBottom="12dp" />
+
+        <!-- Product info -->
+        <TextView android:id="@+id/txtProduct"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:textColor="@color/admin_text_primary"
+            android:textSize="14sp" android:textStyle="bold" />
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginTop="6dp">
+
+            <LinearLayout android:layout_width="0dp" android:layout_weight="1"
+                android:layout_height="wrap_content" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="BUYER" android:textColor="@color/admin_text_muted"
+                    android:textSize="10sp" android:textStyle="bold" />
+                <TextView android:id="@+id/txtBuyer"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="xxx"
+                    android:textColor="@color/admin_text_secondary" android:textSize="12sp"
+                    android:layout_marginTop="2dp" />
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="0dp" android:layout_weight="1"
+                android:layout_height="wrap_content" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="SELLER" android:textColor="@color/admin_text_muted"
+                    android:textSize="10sp" android:textStyle="bold" />
+                <TextView android:id="@+id/txtSeller"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="xxx"
+                    android:textColor="@color/admin_text_secondary" android:textSize="12sp"
+                    android:layout_marginTop="2dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginTop="6dp">
+            <TextView android:id="@+id/txtQty"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Qty: 0"
+                android:textColor="@color/admin_text_muted" android:textSize="12sp" />
+            <TextView android:id="@+id/txtPayment"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="  •  Payment: Paid"
+                android:textColor="@color/admin_success" android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView android:id="@+id/txtPaymentId"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Payment ID: pay_xxx"
+            android:textColor="@color/admin_text_muted" android:textSize="11sp"
+            android:layout_marginTop="4dp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    app:cardCornerRadius="14dp"
+    app:cardElevation="0dp"
+    app:cardBackgroundColor="@color/admin_card">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Top Row: Name + Status -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:gravity="center_vertical">
+
+            <!-- Avatar Circle -->
+            <FrameLayout android:layout_width="42dp" android:layout_height="42dp"
+                android:background="@drawable/bg_circle_primary">
+                <TextView android:layout_width="match_parent" android:layout_height="match_parent"
+                    android:id="@+id/txtAvatar"
+                    android:text="U" android:textColor="@color/admin_white"
+                    android:textSize="18sp" android:textStyle="bold"
+                    android:gravity="center" />
+            </FrameLayout>
+
+            <LinearLayout android:layout_width="0dp" android:layout_weight="1"
+                android:layout_height="wrap_content" android:orientation="vertical"
+                android:layout_marginStart="12dp">
+                <TextView android:id="@+id/txtName"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="User Name"
+                    android:textColor="@color/admin_text_primary"
+                    android:textSize="15sp" android:textStyle="bold" />
+                <TextView android:id="@+id/txtEmail"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="user@email.com"
+                    android:textColor="@color/admin_text_secondary"
+                    android:textSize="12sp" android:layout_marginTop="2dp" />
+            </LinearLayout>
+
+            <TextView android:id="@+id/txtStatus"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="✅ Active"
+                android:textColor="@color/admin_success"
+                android:textSize="12sp" android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- Divider -->
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="@color/admin_card_border"
+            android:layout_marginTop="12dp" android:layout_marginBottom="12dp" />
+
+        <!-- Details Row -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout android:layout_width="0dp" android:layout_weight="1"
+                android:layout_height="wrap_content" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="PHONE"
+                    android:textColor="@color/admin_text_muted"
+                    android:textSize="10sp" android:textStyle="bold" android:letterSpacing="0.1" />
+                <TextView android:id="@+id/txtPhone"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="+91 00000 00000"
+                    android:textColor="@color/admin_text_secondary"
+                    android:textSize="13sp" android:layout_marginTop="2dp" />
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="0dp" android:layout_weight="1"
+                android:layout_height="wrap_content" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="LOCATION"
+                    android:textColor="@color/admin_text_muted"
+                    android:textSize="10sp" android:textStyle="bold" android:letterSpacing="0.1" />
+                <TextView android:id="@+id/txtCity"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="City, State"
+                    android:textColor="@color/admin_text_secondary"
+                    android:textSize="13sp" android:layout_marginTop="2dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView android:id="@+id/txtJoined"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Joined: 00 Oct 2025"
+            android:textColor="@color/admin_text_muted"
+            android:textSize="11sp" android:layout_marginTop="8dp" />
+
+        <!-- Action Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBlock"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Block User"
+            android:textAllCaps="false"
+            android:textColor="@color/admin_white"
+            android:backgroundTint="@color/admin_error"
+            app:cornerRadius="10dp"
+            android:layout_marginTop="12dp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
