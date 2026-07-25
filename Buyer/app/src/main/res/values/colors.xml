@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Brand -->
+    <color name="shopix_primary">#0F6EFD</color>       <!-- Primary brand blue -->
+    <color name="shopix_white">#FFFFFF</color>        <!-- Pure white -->
+    <color name="shopix_dark">#212529</color>         <!-- Primary text / dark -->
+
+    <!-- Backgrounds -->
+    <color name="shopix_bg_default">#F6F8FB</color>   <!-- Soft app background -->
+    <color name="shopix_card_bg">#FFFFFF</color>      <!-- Card background -->
+
+    <!-- Status -->
+    <color name="shopix_success">#22C55E</color>      <!-- Success -->
+    <color name="shopix_error">#FF4144</color>        <!-- Error -->
+
+    <!-- Grays (use only when needed) -->
+    <color name="shopix_gray_100">#F1F3F5</color>     <!-- light surfaces -->
+    <color name="shopix_gray_300">#DEE2E6</color>     <!-- borders/dividers -->
+    <color name="shopix_gray_500">#ADB5BD</color>     <!-- secondary text -->
+
+</resources>

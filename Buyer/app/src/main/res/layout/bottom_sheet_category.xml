@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/shopix_white"
+    android:paddingBottom="24dp">
+
+    <!-- Handle bar -->
+    <View
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/shopix_gray_300" />
+
+    <!-- Title Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Select Category"
+            android:textColor="@color/shopix_dark"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/btnClose"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:padding="4dp"
+            android:src="@drawable/ic_close"
+            android:tint="@color/shopix_dark" />
+
+    </LinearLayout>
+
+    <!-- Divider -->
+    <View android:layout_width="match_parent" android:layout_height="1dp"
+        android:background="@color/shopix_gray_100" />
+
+    <!-- Category 1 -->
+    <TextView
+        android:id="@+id/tvCat1"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Mobiles &amp; Tablets"
+        android:textColor="@color/shopix_dark"
+        android:textSize="15sp"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:background="?attr/selectableItemBackground" />
+
+    <View android:layout_width="match_parent" android:layout_height="1dp"
+        android:background="@color/shopix_gray_100" android:layout_marginStart="20dp" />
+
+    <!-- Category 2 -->
+    <TextView
+        android:id="@+id/tvCat2"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Fashion"
+        android:textColor="@color/shopix_dark"
+        android:textSize="15sp"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:background="?attr/selectableItemBackground" />
+
+    <View android:layout_width="match_parent" android:layout_height="1dp"
+        android:background="@color/shopix_gray_100" android:layout_marginStart="20dp" />
+
+    <!-- Category 3 -->
+    <TextView
+        android:id="@+id/tvCat3"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Electronics"
+        android:textColor="@color/shopix_dark"
+        android:textSize="15sp"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:background="?attr/selectableItemBackground" />
+
+    <View android:layout_width="match_parent" android:layout_height="1dp"
+        android:background="@color/shopix_gray_100" android:layout_marginStart="20dp" />
+
+    <!-- Category 4 -->
+    <TextView
+        android:id="@+id/tvCat4"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Home &amp; Furniture"
+        android:textColor="@color/shopix_dark"
+        android:textSize="15sp"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:background="?attr/selectableItemBackground" />
+
+    <View android:layout_width="match_parent" android:layout_height="1dp"
+        android:background="@color/shopix_gray_100" android:layout_marginStart="20dp" />
+
+    <!-- Category 5 -->
+    <TextView
+        android:id="@+id/tvCat5"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="TVs &amp; Appliances"
+        android:textColor="@color/shopix_dark"
+        android:textSize="15sp"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:background="?attr/selectableItemBackground" />
+
+    <View android:layout_width="match_parent" android:layout_height="1dp"
+        android:background="@color/shopix_gray_100" android:layout_marginStart="20dp" />
+
+    <!-- Category 6 -->
+    <TextView
+        android:id="@+id/tvCat6"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Beauty &amp; Food"
+        android:textColor="@color/shopix_dark"
+        android:textSize="15sp"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:background="?attr/selectableItemBackground" />
+
+</LinearLayout>

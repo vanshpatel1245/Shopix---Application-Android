@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Night mode inherits same fix -->
+    <style name="Base.Theme.Shopix" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/shopix_primary</item>
+        <item name="colorOnPrimary">@color/shopix_white</item>
+        <item name="colorPrimaryContainer">#003366</item>
+        <item name="colorOnPrimaryContainer">@color/shopix_white</item>
+
+        <item name="colorSecondary">@color/shopix_primary</item>
+        <item name="colorOnSecondary">@color/shopix_white</item>
+        <item name="colorSecondaryContainer">#003366</item>
+        <item name="colorOnSecondaryContainer">@color/shopix_white</item>
+
+        <item name="colorTertiary">@color/shopix_primary</item>
+        <item name="colorOnTertiary">@color/shopix_white</item>
+        <item name="colorTertiaryContainer">#003366</item>
+        <item name="colorOnTertiaryContainer">@color/shopix_white</item>
+
+        <item name="colorError">@color/shopix_error</item>
+        <item name="colorOnError">@color/shopix_white</item>
+
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowBackground">@color/shopix_bg_default</item>
+        <item name="android:fitsSystemWindows">false</item>
+    </style>
+    <style name="Theme.Shopix" parent="Base.Theme.Shopix" />
+</resources>

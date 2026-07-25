@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/bg_primary_rounded_14"
+    android:backgroundTint="@color/shopix_white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sort By"
+        android:textColor="@color/shopix_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <RadioGroup
+        android:id="@+id/rgSort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbDefault"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Default (Newest First)"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:textColor="@color/shopix_dark" />
+
+        <RadioButton
+            android:id="@+id/rbPriceLowHigh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price: Low to High"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:textColor="@color/shopix_dark" />
+
+        <RadioButton
+            android:id="@+id/rbPriceHighLow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price: High to Low"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:textColor="@color/shopix_dark" />
+
+    </RadioGroup>
+
+</LinearLayout>

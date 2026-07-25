@@ -1,0 +1,57 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.Shopix" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/shopix_primary</item>
+        <item name="colorOnPrimary">@color/shopix_white</item>
+        <item name="colorPrimaryContainer">#E7F0FF</item>
+        <item name="colorOnPrimaryContainer">@color/shopix_primary</item>
+
+        <item name="colorSecondary">@color/shopix_primary</item>
+        <item name="colorOnSecondary">@color/shopix_white</item>
+        <item name="colorSecondaryContainer">#E7F0FF</item>
+        <item name="colorOnSecondaryContainer">@color/shopix_primary</item>
+
+        <item name="colorTertiary">@color/shopix_primary</item>
+        <item name="colorOnTertiary">@color/shopix_white</item>
+        <item name="colorTertiaryContainer">#E7F0FF</item>
+        <item name="colorOnTertiaryContainer">@color/shopix_primary</item>
+
+        <item name="colorError">@color/shopix_error</item>
+        <item name="colorOnError">@color/shopix_white</item>
+
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowBackground">@color/shopix_bg_default</item>
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+    <style name="Theme.Shopix" parent="Base.Theme.Shopix" />
+
+    <!-- Splash only: blue bars -->
+    <style name="Theme.Shopix.Splash" parent="Base.Theme.Shopix">
+        <item name="android:statusBarColor">@color/shopix_primary</item>
+        <item name="android:navigationBarColor">@color/shopix_primary</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+    </style>
+
+    <!-- Bottom Nav -->
+    <style name="BottomNavIndicatorNone" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:width">0dp</item>
+        <item name="android:height">0dp</item>
+        <item name="shapeAppearance">@null</item>
+        <item name="android:color">@android:color/transparent</item>
+        <item name="color">@android:color/transparent</item>
+    </style>
+
+    <style name="BottomNavTextActive" parent="TextAppearance.Material3.LabelMedium">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="BottomNavTextInactive" parent="TextAppearance.Material3.LabelSmall">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+</resources>
