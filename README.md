@@ -1,75 +1,67 @@
-# Shopix
+# Shopix — Android E-Commerce Platform
 
-A multi-module Android e-commerce application designed to provide a complete online shopping ecosystem with dedicated applications for customers, sellers, and administrators.
+A multi-panel Android e-commerce platform with dedicated apps for Buyers, Sellers, and Admins, backed by Firebase.
 
-Designed in Figma:[Shopix App Design File](https://www.figma.com/design/zwCZDhzK5P1z6zsy4132cM/Shopix?node-id=0-1&t=aNtamF5nR8yQBRbk-1)
+Designed in Figma: [Shopix Design File](https://www.figma.com/design/zwCZDhzK5P1z6zsy4132cM/Shopix?node-id=0-1&t=aNtamF5nR8yQBRbk-1)
 
 ## Project Structure
 
 This repository contains three independent Android applications:
 
-- **Shopix** — Customer-facing app. Users can browse products, manage their cart, place orders, track deliveries, and manage their profile.
-- **ShopixSeller** — Seller-facing app. Vendors can add products, manage inventory, process customer orders, and monitor sales.
-- **ShopixAdmin** — Administrative dashboard for managing users, sellers, products, orders, categories, and overall platform operations.
+- **Buyer** (`com.shopix.buyer`) — Storefront app. Browse products, manage cart and favorites, place orders, and edit profile.
+- **Seller** — Seller-facing app for managing product listings, orders, and store performance.
+- **Admin** — Administrative app for managing users, sellers, products, and orders across the platform.
 
 ## Tech Stack
 
 - **Language:** Kotlin
 - **Build System:** Gradle with Kotlin DSL
-- **Platform:** Android
-- **Backend / Database:** Firebase
-- **Media Storage:** Cloudinary (Product & Profile Images)
+- **Platform:** Android (compileSdk 36, minSdk 24, targetSdk 35)
+- **Backend:** [Firebase](https://firebase.google.com/) (Authentication, Firestore)
+- **Image Loading:** Glide
 
 ## Getting Started
 
 ### Prerequisites
 
-- Android Studio Arctic Fox or later
-- JDK 11 or later
-- Android SDK with the latest build tools
+- Android Studio (latest stable)
+- JDK 11+
+- A Firebase project with Authentication and Firestore enabled
+
+### Firebase Setup
+
+Each module expects its own `google-services.json` (already included for local development). If setting this up against your own Firebase project instead:
+
+1. Create a Firebase project at [console.firebase.google.com](https://console.firebase.google.com)
+2. Register each app (Buyer, Seller, Admin) with its respective package name
+3. Download `google-services.json` for each and place it in the corresponding `app/` folder
+4. Enable **Authentication** and **Firestore** in the Firebase console
+5. Set appropriate Firestore security rules before going beyond local development/testing
 
 ### Building the Project
 
-Each module can be built independently:
+Each module builds independently:
 
 ```bash
-# Build Shopix (Customer)
-cd Shopix
+# Buyer
+cd Buyer
 ./gradlew build
 
-# Build ShopixSeller
-cd ShopixSeller
+# Seller
+cd Seller
 ./gradlew build
 
-# Build ShopixAdmin
-cd ShopixAdmin
+# Admin
+cd Admin
 ./gradlew build
 ```
 
 ### Running the Applications
 
-1. Open the desired module folder in Android Studio.
-2. Sync the Gradle files.
-3. Connect an Android device or start an emulator.
-4. Run the application.
-
-## Module Descriptions
-
-### Shopix (Customer)
-
-The customer application enables users to discover products across categories, search items, add products to their cart or wishlist, place secure orders, track order status, and manage their account.
-
-### ShopixSeller
-
-The seller application allows vendors to create and manage their online store, publish products, update inventory, receive customer orders, and monitor business performance.
-
-### ShopixAdmin
-
-The administrative application provides complete control over the platform, including user management, seller approvals, product moderation, category management, order management, and overall system administration.
-
-## Development
-
-This project follows standard Android development practices using Kotlin. Each module is structured as an independent Android application with its own build configuration, allowing separate development and deployment.
+1. Open the desired module folder in Android Studio
+2. Sync Gradle
+3. Connect an Android device or start an emulator
+4. Run the app
 
 ## License
 
